@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install ios</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FFFFFF; /* Inverted from black to white */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        .loading-container {
+            text-align: center;
+            color: #000000; /* Inverted from white to black */
+        }
+        .apple-logo {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 30px;
+        }
+        .progress-bar {
+            width: 250px;
+            height: 6px;
+            background-color: rgba(0, 0, 0, 0.2); /* Inverted to a light black */
+            border-radius: 3px;
+            overflow: hidden;
+            margin: 0 auto 20px;
+        }
+        .progress {
+            width: 50%;
+            height: 100%;
+            background-color: #000000; /* Inverted from white to black */
+            border-radius: 3px 0 0 3px;
+            animation: load 120s infinite ease-in-out;
+        }
+        @keyframes load {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+        .status-text {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="apple-logo">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="status-text"> </div>
+    </div>
+</body>
+</html>
